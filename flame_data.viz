@@ -1,0 +1,456 @@
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f776f432f0d __poll_nocancel (xx)
+	0000000000fa202f Mysqld_socket_listener::listen_for_connection_event (xx)
+	0000000000d53a90 mysqld_main (xx)
+	00007f776f361445 __libc_start_main (xx)
+	0000000000d35df4 _start (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f777033c644 ??? (xx)
+	000000000221ce6a LinuxAIOHandler::collect (xx)
+	000000000221d292 LinuxAIOHandler::poll (xx)
+	00000000022213ef os_aio_handler (xx)
+	0000000002438df6 fil_aio_wait (xx)
+	00000000022af640 io_handler_thread (xx)
+	00000000022b017e std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f777033c644 ??? (xx)
+	000000000221ce6a LinuxAIOHandler::collect (xx)
+	000000000221d292 LinuxAIOHandler::poll (xx)
+	00000000022213ef os_aio_handler (xx)
+	0000000002438df6 fil_aio_wait (xx)
+	00000000022af640 io_handler_thread (xx)
+	00000000022b017e std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f777033c644 ??? (xx)
+	000000000221ce6a LinuxAIOHandler::collect (xx)
+	000000000221d292 LinuxAIOHandler::poll (xx)
+	00000000022213ef os_aio_handler (xx)
+	0000000002438df6 fil_aio_wait (xx)
+	00000000022af640 io_handler_thread (xx)
+	00000000022b017e std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f777033c644 ??? (xx)
+	000000000221ce6a LinuxAIOHandler::collect (xx)
+	000000000221d292 LinuxAIOHandler::poll (xx)
+	00000000022213ef os_aio_handler (xx)
+	0000000002438df6 fil_aio_wait (xx)
+	00000000022af640 io_handler_thread (xx)
+	00000000022b017e std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f777033c644 ??? (xx)
+	000000000221ce6a LinuxAIOHandler::collect (xx)
+	000000000221d292 LinuxAIOHandler::poll (xx)
+	00000000022213ef os_aio_handler (xx)
+	0000000002438df6 fil_aio_wait (xx)
+	00000000022af640 io_handler_thread (xx)
+	00000000022b017e std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f777033c644 ??? (xx)
+	000000000221ce6a LinuxAIOHandler::collect (xx)
+	000000000221d292 LinuxAIOHandler::poll (xx)
+	00000000022213ef os_aio_handler (xx)
+	0000000002438df6 fil_aio_wait (xx)
+	00000000022af640 io_handler_thread (xx)
+	00000000022b017e std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f777033c644 ??? (xx)
+	000000000221ce6a LinuxAIOHandler::collect (xx)
+	000000000221d292 LinuxAIOHandler::poll (xx)
+	00000000022213ef os_aio_handler (xx)
+	0000000002438df6 fil_aio_wait (xx)
+	00000000022af640 io_handler_thread (xx)
+	00000000022b017e std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f777033c644 ??? (xx)
+	000000000221ce6a LinuxAIOHandler::collect (xx)
+	000000000221d292 LinuxAIOHandler::poll (xx)
+	00000000022213ef os_aio_handler (xx)
+	0000000002438df6 fil_aio_wait (xx)
+	00000000022af640 io_handler_thread (xx)
+	00000000022b017e std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f777033c644 ??? (xx)
+	000000000221ce6a LinuxAIOHandler::collect (xx)
+	000000000221d292 LinuxAIOHandler::poll (xx)
+	00000000022213ef os_aio_handler (xx)
+	0000000002438df6 fil_aio_wait (xx)
+	00000000022af640 io_handler_thread (xx)
+	00000000022b017e std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f777033c644 ??? (xx)
+	000000000221ce6a LinuxAIOHandler::collect (xx)
+	000000000221d292 LinuxAIOHandler::poll (xx)
+	00000000022213ef os_aio_handler (xx)
+	0000000002438df6 fil_aio_wait (xx)
+	00000000022af640 io_handler_thread (xx)
+	00000000022b017e std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	0000000002374e0d buf_flush_page_coordinator_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	00000000021caa3c log_checkpointer (xx)
+	00000000021e2c16 std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	000000000220d3fb log_flush_notifier (xx)
+	00000000021e2c16 std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	000000000220c66a log_flusher (xx)
+	00000000021e2c16 std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	000000000220cdab log_write_notifier (xx)
+	00000000021e2c16 std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	000000000220bf03 log_writer (xx)
+	00000000021e2c16 std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	00000000021dae4d log_files_governor (xx)
+	00000000021e2c16 std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	00000000021c4e7e lock_wait_timeout_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	00000000022a5e59 srv_error_monitor_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	00000000022acf58 srv_monitor_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000002224996 os_event::wait_low (xx)
+	0000000002355812 buf_resize_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb5f3d __nanosleep_nocancel (xx)
+	00000000022ad915 srv_master_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	0000000002404797 dict_stats_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	00000000022fde24 ib_wqueue_timedwait (xx)
+	000000000246dd62 fts_optimize_thread (xx)
+	0000000002468a06 std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000002224996 os_event::wait_low (xx)
+	000000000236ce4b buf_dump_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	00000000022254c7 os_event::timed_wait (xx)
+	0000000002225641 os_event::wait_time_low (xx)
+	00000000023a8937 Clone_persist_gtid::periodic_write (xx)
+	00000000023a6566 std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void  (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000002224996 os_event::wait_low (xx)
+	00000000022ae760 srv_purge_coordinator_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000002224996 os_event::wait_low (xx)
+	00000000022ae164 srv_worker_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000002224996 os_event::wait_low (xx)
+	00000000022ae164 srv_worker_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000002224996 os_event::wait_low (xx)
+	00000000022ae164 srv_worker_thread (xx)
+	00000000021f5792 void Detached_thread::operator (xx)
+	00000000029d2784 execute_native_thread_routine (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000001338c89 Event_queue::cond_wait (xx)
+	00000000013396ef Event_queue::get_top_for_execution_if_time (xx)
+	000000000133c35b Event_scheduler::run (xx)
+	000000000133ca66 event_scheduler_thread (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f776f37647a __libc_sigwaitinfo (xx)
+	0000000000d3b12b signal_hand (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f776f43e183 __epoll_wait_nocancel (xx)
+	00000000028b5cdd epoll_dispatch (xx)
+	00000000028ac098 event_base_loop (xx)
+	00000000027f55ea ngs::Server::run_task (xx)
+	00000000027f603d std::_Function_handler<void  (xx)
+	000000000286abe2 ngs::Scheduler_dynamic::worker (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	00000000028561fc xpl::Broker_task::wait_for_data_and_swap_queues (xx)
+	00000000028568f6 xpl::Broker_task::loop (xx)
+	00000000027f55ea ngs::Server::run_task (xx)
+	00000000027f603d std::_Function_handler<void  (xx)
+	000000000286abe2 ngs::Scheduler_dynamic::worker (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000001cd8073 compress_gtid_table (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000000f9bd74 Per_thread_connection_handler::block_until_new_connection (xx)
+	0000000000f9bfef handle_connection (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000000f9bd74 Per_thread_connection_handler::block_until_new_connection (xx)
+	0000000000f9bfef handle_connection (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000000f9bd74 Per_thread_connection_handler::block_until_new_connection (xx)
+	0000000000f9bfef handle_connection (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000000f9bd74 Per_thread_connection_handler::block_until_new_connection (xx)
+	0000000000f9bfef handle_connection (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000000f9bd74 Per_thread_connection_handler::block_until_new_connection (xx)
+	0000000000f9bfef handle_connection (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000000f9bd74 Per_thread_connection_handler::block_until_new_connection (xx)
+	0000000000f9bfef handle_connection (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000000f9bd74 Per_thread_connection_handler::block_until_new_connection (xx)
+	0000000000f9bfef handle_connection (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000000f9bd74 Per_thread_connection_handler::block_until_new_connection (xx)
+	0000000000f9bfef handle_connection (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2995 __pthread_cond_wait (xx)
+	0000000000f9bd74 Per_thread_connection_handler::block_until_new_connection (xx)
+	0000000000f9bfef handle_connection (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	0000000002844022 xpl::Cond::timed_wait (xx)
+	000000000286953d ngs::Scheduler_dynamic::wait_if_idle_then_delete_worker (xx)
+	000000000286a919 ngs::Scheduler_dynamic::worker (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)
+
+Thread 22314 26772285.352955:		1 cycles:
+	00007f7770eb2d42 __pthread_cond_timedwait (xx)
+	0000000002844022 xpl::Cond::timed_wait (xx)
+	000000000286953d ngs::Scheduler_dynamic::wait_if_idle_then_delete_worker (xx)
+	000000000286a919 ngs::Scheduler_dynamic::worker (xx)
+	0000000002754625 pfs_spawn_thread (xx)
+	00007f7770eaee25 start_thread (xx)
+	00007f776f43dbad clone (xx)

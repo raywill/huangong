@@ -1,0 +1,409 @@
+Thread 97827 (mysqld)
+#0    0x00007f776f432f0d in __poll_nocancel from /usr/lib64/libc-2.17.so
+#1    0x0000000000fa202f in Mysqld_socket_listener::listen_for_connection_event() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000000d53a90 in mysqld_main(int, char**) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00007f776f361445 in __libc_start_main from /usr/lib64/libc-2.17.so
+#4    0x0000000000d35df4 in _start from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+Thread 97833 (ib_io_ibuf)
+#0    0x00007f777033c644 in ??? from /usr/lib64/libaio.so.1.0.1
+#1    0x000000000221ce6a in LinuxAIOHandler::collect() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000221d292 in LinuxAIOHandler::poll(fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022213ef in os_aio_handler(unsigned long, fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002438df6 in fil_aio_wait(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000022af640 in io_handler_thread(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000022b017e in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(unsigned long), unsigned long> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#8    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#9    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97834 (ib_io_log)
+#0    0x00007f777033c644 in ??? from /usr/lib64/libaio.so.1.0.1
+#1    0x000000000221ce6a in LinuxAIOHandler::collect() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000221d292 in LinuxAIOHandler::poll(fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022213ef in os_aio_handler(unsigned long, fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002438df6 in fil_aio_wait(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000022af640 in io_handler_thread(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000022b017e in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(unsigned long), unsigned long> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#8    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#9    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97835 (ib_io_rd-1)
+#0    0x00007f777033c644 in ??? from /usr/lib64/libaio.so.1.0.1
+#1    0x000000000221ce6a in LinuxAIOHandler::collect() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000221d292 in LinuxAIOHandler::poll(fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022213ef in os_aio_handler(unsigned long, fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002438df6 in fil_aio_wait(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000022af640 in io_handler_thread(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000022b017e in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(unsigned long), unsigned long> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#8    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#9    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97836 (ib_io_rd-2)
+#0    0x00007f777033c644 in ??? from /usr/lib64/libaio.so.1.0.1
+#1    0x000000000221ce6a in LinuxAIOHandler::collect() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000221d292 in LinuxAIOHandler::poll(fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022213ef in os_aio_handler(unsigned long, fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002438df6 in fil_aio_wait(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000022af640 in io_handler_thread(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000022b017e in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(unsigned long), unsigned long> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#8    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#9    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97837 (ib_io_rd-3)
+#0    0x00007f777033c644 in ??? from /usr/lib64/libaio.so.1.0.1
+#1    0x000000000221ce6a in LinuxAIOHandler::collect() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000221d292 in LinuxAIOHandler::poll(fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022213ef in os_aio_handler(unsigned long, fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002438df6 in fil_aio_wait(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000022af640 in io_handler_thread(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000022b017e in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(unsigned long), unsigned long> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#8    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#9    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97838 (ib_io_rd-4)
+#0    0x00007f777033c644 in ??? from /usr/lib64/libaio.so.1.0.1
+#1    0x000000000221ce6a in LinuxAIOHandler::collect() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000221d292 in LinuxAIOHandler::poll(fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022213ef in os_aio_handler(unsigned long, fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002438df6 in fil_aio_wait(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000022af640 in io_handler_thread(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000022b017e in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(unsigned long), unsigned long> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#8    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#9    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97839 (ib_io_wr-1)
+#0    0x00007f777033c644 in ??? from /usr/lib64/libaio.so.1.0.1
+#1    0x000000000221ce6a in LinuxAIOHandler::collect() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000221d292 in LinuxAIOHandler::poll(fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022213ef in os_aio_handler(unsigned long, fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002438df6 in fil_aio_wait(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000022af640 in io_handler_thread(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000022b017e in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(unsigned long), unsigned long> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#8    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#9    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97840 (ib_io_wr-2)
+#0    0x00007f777033c644 in ??? from /usr/lib64/libaio.so.1.0.1
+#1    0x000000000221ce6a in LinuxAIOHandler::collect() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000221d292 in LinuxAIOHandler::poll(fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022213ef in os_aio_handler(unsigned long, fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002438df6 in fil_aio_wait(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000022af640 in io_handler_thread(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000022b017e in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(unsigned long), unsigned long> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#8    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#9    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97841 (ib_io_wr-3)
+#0    0x00007f777033c644 in ??? from /usr/lib64/libaio.so.1.0.1
+#1    0x000000000221ce6a in LinuxAIOHandler::collect() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000221d292 in LinuxAIOHandler::poll(fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022213ef in os_aio_handler(unsigned long, fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002438df6 in fil_aio_wait(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000022af640 in io_handler_thread(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000022b017e in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(unsigned long), unsigned long> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#8    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#9    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97842 (ib_io_wr-4)
+#0    0x00007f777033c644 in ??? from /usr/lib64/libaio.so.1.0.1
+#1    0x000000000221ce6a in LinuxAIOHandler::collect() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000221d292 in LinuxAIOHandler::poll(fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022213ef in os_aio_handler(unsigned long, fil_node_t**, void**, IORequest*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002438df6 in fil_aio_wait(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000022af640 in io_handler_thread(unsigned long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000022b017e in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(unsigned long), unsigned long> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#8    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#9    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97843 (ib_pg_flush_co)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002374e0d in buf_flush_page_coordinator_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97847 (ib_log_checkpt)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000021caa3c in log_checkpointer(log_t*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021e2c16 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(log_t*), log_t*> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97848 (ib_log_fl_notif)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x000000000220d3fb in log_flush_notifier(log_t*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021e2c16 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(log_t*), log_t*> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97849 (ib_log_flush)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x000000000220c66a in log_flusher(log_t*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021e2c16 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(log_t*), log_t*> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97850 (ib_log_wr_notif)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x000000000220cdab in log_write_notifier(log_t*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021e2c16 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(log_t*), log_t*> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97851 (ib_log_writer)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x000000000220bf03 in log_writer(log_t*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021e2c16 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(log_t*), log_t*> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97852 (ib_log_files_g)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000021dae4d in log_files_governor(log_t*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021e2c16 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(log_t*), log_t*> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97857 (ib_srv_lock_to)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000021c4e7e in lock_wait_timeout_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97858 (ib_srv_err_mon)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022a5e59 in srv_error_monitor_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97859 (ib_srv_mon)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022acf58 in srv_monitor_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97868 (ib_buf_resize)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000002224996 in os_event::wait_low(long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002355812 in buf_resize_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#6    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97869 (ib_src_main)
+#0    0x00007f7770eb5f3d in __nanosleep_nocancel from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022ad915 in srv_master_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#5    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97870 (ib_dict_stats)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002404797 in dict_stats_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97871 (ib_fts_opt)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000022fde24 in ib_wqueue_timedwait(ib_wqueue_t*, std::chrono::duration<long, std::ratio<1l, 1000000l> >) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x000000000246dd62 in fts_optimize_thread(ib_wqueue_t*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x0000000002468a06 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(ib_wqueue_t*), ib_wqueue_t*> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#8    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97885 (ib_buf_dump)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000002224996 in os_event::wait_low(long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000236ce4b in buf_dump_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#6    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97886 (ib_clone_gtid)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000022254c7 in os_event::timed_wait(timespec const*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002225641 in os_event::wait_time_low(std::chrono::duration<long, std::ratio<1l, 1000000l> >, long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000023a8937 in Clone_persist_gtid::periodic_write() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000023a6566 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<Detached_thread, void (*)(Clone_persist_gtid*), Clone_persist_gtid*> > >::_M_run() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97887 (ib_srv_purge)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000002224996 in os_event::wait_low(long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x00000000022ae760 in srv_purge_coordinator_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#6    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97888 (ib_srv_wkr-1)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000002224996 in os_event::wait_low(long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x00000000022ae164 in srv_worker_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#6    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97889 (ib_srv_wkr-2)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000002224996 in os_event::wait_low(long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x00000000022ae164 in srv_worker_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#6    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97890 (ib_srv_wkr-3)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000002224996 in os_event::wait_low(long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x00000000022ae164 in srv_worker_thread() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000021f5792 in void Detached_thread::operator()<void (*)()>(void (*&&)()) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000029d2784 in execute_native_thread_routine from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#6    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97893 (evt_sched)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000001338c89 in Event_queue::cond_wait(THD*, timespec*, PSI_stage_info_v1 const*, char const*, char const*, unsigned int) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x00000000013396ef in Event_queue::get_top_for_execution_if_time(THD*, Event_queue_element_for_exec**) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x000000000133c35b in Event_scheduler::run(THD*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x000000000133ca66 in event_scheduler_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#7    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97894 (sig_handler)
+#0    0x00007f776f37647a in __libc_sigwaitinfo from /usr/lib64/libc-2.17.so
+#1    0x0000000000d3b12b in signal_hand from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#4    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97895 (xpl_accept-2)
+#0    0x00007f776f43e183 in __epoll_wait_nocancel from /usr/lib64/libc-2.17.so
+#1    0x00000000028b5cdd in epoll_dispatch from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x00000000028ac098 in event_base_loop from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000027f55ea in ngs::Server::run_task(std::shared_ptr<xpl::iface::Server_task>) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000027f603d in std::_Function_handler<void (), ngs::Server::start_tasks()::{lambda()#1}>::_M_invoke(std::_Any_data const&) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x000000000286abe2 in ngs::Scheduler_dynamic::worker() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#8    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97896 (xpl_accept-3)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x00000000028561fc in xpl::Broker_task::wait_for_data_and_swap_queues(std::queue<ngs::Notice_descriptor, std::list<ngs::Notice_descriptor, std::allocator<ngs::Notice_descriptor> > >*) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x00000000028568f6 in xpl::Broker_task::loop() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00000000027f55ea in ngs::Server::run_task(std::shared_ptr<xpl::iface::Server_task>) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00000000027f603d in std::_Function_handler<void (), ngs::Server::start_tasks()::{lambda()#1}>::_M_invoke(std::_Any_data const&) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x000000000286abe2 in ngs::Scheduler_dynamic::worker() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#6    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#7    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#8    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 97897 (gtid_zip)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000001cd8073 in compress_gtid_table from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#4    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 103554 (connection)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000000f9bd74 in Per_thread_connection_handler::block_until_new_connection() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000000f9bfef in handle_connection from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#5    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 16841 (connection)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000000f9bd74 in Per_thread_connection_handler::block_until_new_connection() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000000f9bfef in handle_connection from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#5    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 16845 (connection)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000000f9bd74 in Per_thread_connection_handler::block_until_new_connection() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000000f9bfef in handle_connection from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#5    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 16846 (connection)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000000f9bd74 in Per_thread_connection_handler::block_until_new_connection() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000000f9bfef in handle_connection from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#5    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 16850 (connection)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000000f9bd74 in Per_thread_connection_handler::block_until_new_connection() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000000f9bfef in handle_connection from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#5    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 16851 (connection)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000000f9bd74 in Per_thread_connection_handler::block_until_new_connection() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000000f9bfef in handle_connection from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#5    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 16852 (connection)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000000f9bd74 in Per_thread_connection_handler::block_until_new_connection() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000000f9bfef in handle_connection from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#5    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 16854 (connection)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000000f9bd74 in Per_thread_connection_handler::block_until_new_connection() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000000f9bfef in handle_connection from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#5    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 16859 (connection)
+#0    0x00007f7770eb2995 in __pthread_cond_wait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000000f9bd74 in Per_thread_connection_handler::block_until_new_connection() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x0000000000f9bfef in handle_connection from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#5    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 4566 (xpl_worker-935)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000002844022 in xpl::Cond::timed_wait(xpl::Mutex&, unsigned long long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000286953d in ngs::Scheduler_dynamic::wait_if_idle_then_delete_worker(unsigned long long&) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x000000000286a919 in ngs::Scheduler_dynamic::worker() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#6    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so
+Thread 4567 (xpl_worker-934)
+#0    0x00007f7770eb2d42 in __pthread_cond_timedwait from /usr/lib64/libpthread-2.17.so
+#1    0x0000000002844022 in xpl::Cond::timed_wait(xpl::Mutex&, unsigned long long) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#2    0x000000000286953d in ngs::Scheduler_dynamic::wait_if_idle_then_delete_worker(unsigned long long&) from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#3    0x000000000286a919 in ngs::Scheduler_dynamic::worker() from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#4    0x0000000002754625 in pfs_spawn_thread from /home/liangchen.ylc/local/mysql-8.0.32/bin/mysqld
+#5    0x00007f7770eaee25 in start_thread from /usr/lib64/libpthread-2.17.so
+#6    0x00007f776f43dbad in clone from /usr/lib64/libc-2.17.so

@@ -3,6 +3,7 @@
 import sys
 import os
 import subprocess
+import datetime
 
 class Edge:
   def __init__(self):
@@ -11,6 +12,7 @@ class Edge:
     self.label = None
     self.penwidth = 1
     self.weight = 1.
+    self.color = "#000000"
 
 class Node:
   def __init__(self):
@@ -35,6 +37,7 @@ class PerfToGraph:
     self.s100 = 100.
     self.node_drop_pct = node_drop_pct
     self.edge_drop_pct = edge_drop_pct
+    self.next_edge_color = 0
     if edge_drop_pct is None:
       self.edge_drop_pct = node_drop_pct / 5.
     self.node_drop_cnt = 0
@@ -57,6 +60,21 @@ class PerfToGraph:
         (19.0, "#EB1C01"),
         (23.0, "#E60001")
         ]
+    self.edge_colors = [
+        "#FF8B01",
+        "#EB1C01",
+        "#DC92EF",
+        "#9653B8",
+        "#66B031",
+        "#D9CA0C",
+        "#BDBDBD",
+        "#696969",
+        "#113866",
+        "#5CBFAC",
+        "#1120A8",
+        "#960144",
+        "#EA52B2"
+        ]
 
   def convert(self):
     self.read_stdin()
@@ -78,6 +96,11 @@ class PerfToGraph:
       e.weight = 100
     elif e.weight > 10:
       e.weight = 10 + e.weight / 10.
+
+  def set_edge_color(self, e):
+    i = self.next_edge_color
+    self.next_edge_color += 1
+    e.color = self.edge_colors[i % len(self.edge_colors)];
 
   def set_node_color(self, n):
     v = n.self_count / self.s100
@@ -154,12 +177,17 @@ class PerfToGraph:
         e.label = "%.2f%%" % (e.count/self.s100)
         self.set_pen_width(e)
         self.set_edge_weight(e)
+        self.set_edge_color(e)
 
   def to_dot(self):
     out = []
     out.append("""
     digraph call_graph_for_perf_data {
-    node [shape = box, style=filled ];""")
+    style = "perf.css";
+    node [shape = box, style=filled ];
+    """)
+    
+    out.append('note [ label = "%s\\nTotal samples: %d\\nDrop nodes with <= %.2f%%(%d)\\nDrop edges with <= %.2f%%(%d)", fillcolor="#00AFFF" ];' % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), self.samples, self.node_drop_pct, int(self.node_drop_cnt), self.edge_drop_pct, int(self.edge_drop_cnt)))
 
     for n in self.all_nodes.values():
       if n.count <= self.node_drop_cnt:
@@ -173,9 +201,8 @@ class PerfToGraph:
         if e.count <= self.edge_drop_cnt or e.to.count <= self.node_drop_cnt:
           continue
         tip = 'edgetooltip = "%s ==> %s", labeltooltip = "%s ==> %s"' % (n.name, e.to.name, n.name, e.to.name)
-        out.append('%s -> %s [ penwidth = %.2f, weight = %f, label = "%s", %s ];' % (n.id, e.to.id, e.penwidth, e.weight, e.label, tip))
+        out.append('%s -> %s [ penwidth = %.2f, weight = %f, color = "%s", label = "%s", fontcolor = "%s", %s ];' % (n.id, e.to.id, e.penwidth, e.weight, e.color, e.label, e.color, tip))
   
-    out.append('note [ label = "Total samples: %d\\nDrop nodes with <= %.2f%%(%d)\\nDrop edges with <= %.2f%%(%d)", fillcolor="#00AFFF" ];' % (self.samples, self.node_drop_pct, int(self.node_drop_cnt), self.edge_drop_pct, int(self.edge_drop_cnt)))
     out.append("}")
     return "\n".join(out)
 
@@ -183,6 +210,7 @@ class PerfToGraph:
     if "dot" == self.fmt:
       print self.to_dot()
     elif "svg" == self.fmt:
+      #cmd = "dot -T svg  -Gstylesheet=../../style.css"
       cmd = "dot -T svg"
       sub = subprocess.Popen(cmd, stdin=subprocess.PIPE, shell = True)
       dot = self.to_dot()
